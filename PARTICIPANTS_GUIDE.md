@@ -115,6 +115,7 @@ Write ANSI SQL that reproduces the fee calculation in #fees_calc.cob using the t
 ### Inputs
 - Data files: [`transactions.csv`](data/transactions.csv), [`customers.csv`](data/customers.csv)
 - Schema reference: [`schema.sql`](data/schema.sql)
+- Excel baselines: [`reference/formulas/EXCEL_TO_SQL_BASELINES.md`](reference/formulas/EXCEL_TO_SQL_BASELINES.md)
 
 ### How to Work
 1. Ask Copilot to profile each CSV (row counts, nulls, duplicates) and log results in [`DATA_NOTES.md`](outputs/DATA_NOTES.md).
@@ -155,7 +156,6 @@ Deliverables:
 | `/explain` | Summarize legacy code or SQL |
 | `/fix` | Suggest repairs for selected text |
 | `/tests` | Generate validation plans |
-| `/doc` | Draft documentation or requirements |
 
 ### Common Issues & Fixes
 - Copilot ignores context → add explicit `#file` references.
